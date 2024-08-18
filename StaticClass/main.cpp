@@ -1,5 +1,6 @@
 #include <iostream>
 
+// extern 存储类用于提供一个全局变量的引用，全局变量对所有的程序文件都是可见的
 extern int counter;  // 试图访问 file.cpp 中的 counter（会导致编译错误，但这一步只是extern，不会报错）
 extern void incrementCounter();
 extern void fun();

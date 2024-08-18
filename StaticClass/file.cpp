@@ -1,7 +1,7 @@
 #include <iostream>
 
 // static 存储类指示编译器在程序的生命周期内保持变量持续存在
-static int counter = 0;  // static 全局变量，只能在 file.cpp 中使用
+static int counter = 0;  // static 全局变量，在所有文件中存在，但只能在 file.cpp 中使用
 
 void incrementCounter() {
     counter++;
