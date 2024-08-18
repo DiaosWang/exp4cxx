@@ -15,10 +15,10 @@ void myFunction2(int param[10]){  // 这里只是期待实参为int [10]，并�
   }
   std::cout << std::endl;
 
-  for(auto i : param){ //  这儿报错：this range-based 'for' statement requires a suitable "begin" function and none was found. 为啥？  
-    std::cout << i << "  ";
-  }
-  std::cout << std::endl;
+  // for(auto i : param){       //  这儿报错：this range-based 'for' statement requires a suitable "begin" function and none was found. 为啥？   
+  //   std::cout << i << "  ";  // 答：这里int param[10]作为形参其实是int*, 无法for(auto i :...) 这种方式遍历
+  // }
+  // std::cout << std::endl;
 }
 
 void myFunction3(int param[]){
