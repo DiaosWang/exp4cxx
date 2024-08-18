@@ -13,3 +13,11 @@ void fun(){
     da += 1;
     std::cout << "static int da = " << da << ", func `fun` in file.cpp" << std::endl;
 }
+
+static int gvar[10];
+int * getGlobal(){
+  for (auto x : gvar){
+    std::cout << x << "  ";
+  }
+  return gvar;
+}
