@@ -55,7 +55,7 @@ public:
     //  if(oc.a[++index] == 0) return false;
      return true;
    }
-   bool operator++(int) // 后缀版本
+   bool operator++(int) // 后缀版本. 哑元参数为int，也只能是int，这个参数仅用于区分前缀和后缀++
    { 
       return operator++();
    }
