@@ -41,5 +41,6 @@
         "streambuf": "cpp",
         "ctime": "cpp",
         "cstring": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
