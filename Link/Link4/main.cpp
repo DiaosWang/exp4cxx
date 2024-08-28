@@ -51,7 +51,7 @@ template class TypeClass<int>;  // 实例化声明，会实例化模板
 TypeClass<int> tc;  
 
 template<typename T>
-static T TypeClass<T>::staticKK;  // 泛型定义
+T TypeClass<T>::staticKK;  // 泛型定义
 
 template<> int TypeClass<int>::staticKK = 10;
 
