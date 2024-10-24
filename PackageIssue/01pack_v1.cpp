@@ -7,17 +7,17 @@ using namespace std;
 int main(){
     int M, N; // 背包空间为M 物品种类为N
     cin >> M >> N; 
-    vector<int> weighs(N, 0), values(N,0);
+    vector<int> weights(N, 0), values(N,0);
     for(int i = 0; i < N; i++) 
-        cin >> weighs[i]; 
+        cin >> weights[i]; 
     for(int i = 0; i < N; i++)  
         cin >> values[i];
 
     vector<vector<int> > dp(N+1, vector<int>(M+1,0)); 
     for(int i = 1; i <= N; i++){
         for(int j = 1; j <= M; j++){
-            if(j >= weighs[i-1])  
-                dp[i][j] = max(dp[i-1][j], dp[i-1][j-weighs[i-1]] + values[i-1]);
+            if(j >= weights[i-1])  
+                dp[i][j] = max(dp[i-1][j], dp[i-1][j-weights[i-1]] + values[i-1]);
             else dp[i][j] = dp[i-1][j]; 
         }
     }
