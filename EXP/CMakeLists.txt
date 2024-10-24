@@ -2,24 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_COMPILER "g++")#设置C++编译器
 set(CMAKE_CXX_FLAGS "-g -Wall")
 
-set(CMAKE_CXX_STANDARD 17)        # 使用C++17标准
+set(CMAKE_CXX_STANDARD 11)        # 使用C++17标准
 
 PROJECT (proj CXX)
-ADD_EXECUTABLE(main main.cpp)
-ADD_EXECUTABLE(main2 main2.cpp)
-ADD_EXECUTABLE(main3 main3.cpp)
-ADD_EXECUTABLE(main4 main4.cpp)
-ADD_EXECUTABLE(main5 main5.cpp)
-ADD_EXECUTABLE(main6 main6.cpp)
-ADD_EXECUTABLE(main8 main8.cpp)
-ADD_EXECUTABLE(main9 main9.cpp)
-ADD_EXECUTABLE(main10 main10.cpp)
-ADD_EXECUTABLE(main11 main11.cpp)
-ADD_EXECUTABLE(main13 main13.cpp)
-ADD_EXECUTABLE(main14 main14.cpp)
-ADD_EXECUTABLE(main15 main15.cpp)
-ADD_EXECUTABLE(main16 main16.cpp)
-ADD_EXECUTABLE(main17 main17.cpp)
-ADD_EXECUTABLE(main18 main18.cpp)
-ADD_EXECUTABLE(main19 main19.cpp)
-ADD_EXECUTABLE(main20 main20.cpp)
+# ADD_EXECUTABLE(main35 main35.cpp)
+# ADD_EXECUTABLE(main36 main36.cpp)
+ADD_EXECUTABLE(main37 main37.cpp)
